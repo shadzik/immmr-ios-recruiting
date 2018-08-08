@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6015EBDE099820FD667C6B82 /* Pods_immmr_ios_recruitingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26EE3EF26A77BB3DF68D55A /* Pods_immmr_ios_recruitingTests.framework */; };
+		988D254C1E5B14D3007E7CE8 /* IMRMovieViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 988D254B1E5B14D3007E7CE8 /* IMRMovieViewModel.m */; };
+		988D254F1E5B1EFD007E7CE8 /* IMRMovieDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 988D254E1E5B1EFD007E7CE8 /* IMRMovieDetailsViewController.m */; };
+		988D25521E5B20A5007E7CE8 /* IMRTableLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 988D25511E5B20A5007E7CE8 /* IMRTableLayout.m */; };
+		988D25551E5B25C3007E7CE8 /* IMRMovieDetailsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 988D25541E5B25C3007E7CE8 /* IMRMovieDetailsViewModel.m */; };
+		988D25581E5B31E3007E7CE8 /* IMRPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 988D25571E5B31E3007E7CE8 /* IMRPerson.m */; };
+		988D255B1E5B3203007E7CE8 /* IMRCast.m in Sources */ = {isa = PBXBuildFile; fileRef = 988D255A1E5B3203007E7CE8 /* IMRCast.m */; };
+		988D255E1E5B3210007E7CE8 /* IMRCrew.m in Sources */ = {isa = PBXBuildFile; fileRef = 988D255D1E5B3210007E7CE8 /* IMRCrew.m */; };
+		988D25621E5B3B82007E7CE8 /* IMRBigPosterReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 988D25601E5B3B82007E7CE8 /* IMRBigPosterReusableView.m */; };
+		988D25631E5B3B82007E7CE8 /* IMRBigPosterReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988D25611E5B3B82007E7CE8 /* IMRBigPosterReusableView.xib */; };
+		988D25671E5B42BE007E7CE8 /* IMRSectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 988D25651E5B42BE007E7CE8 /* IMRSectionReusableView.m */; };
+		988D25681E5B42BE007E7CE8 /* IMRSectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988D25661E5B42BE007E7CE8 /* IMRSectionReusableView.xib */; };
+		988D256C1E5B4387007E7CE8 /* IMRPersonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 988D256A1E5B4387007E7CE8 /* IMRPersonCollectionViewCell.m */; };
+		988D256D1E5B4387007E7CE8 /* IMRPersonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988D256B1E5B4387007E7CE8 /* IMRPersonCollectionViewCell.xib */; };
+		988D25711E5B45C3007E7CE8 /* IMRPlotCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 988D256F1E5B45C3007E7CE8 /* IMRPlotCollectionViewCell.m */; };
+		988D25721E5B45C3007E7CE8 /* IMRPlotCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988D25701E5B45C3007E7CE8 /* IMRPlotCollectionViewCell.xib */; };
+		988D25751E5B51C1007E7CE8 /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 988D25741E5B51C1007E7CE8 /* UIImage+Extensions.m */; };
+		988D25781E5B52C9007E7CE8 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 988D25771E5B52C9007E7CE8 /* NSString+Extensions.m */; };
+		98E5F21A1E5AEAEA004C1A91 /* IMRMovieAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E5F2191E5AEAEA004C1A91 /* IMRMovieAPIClient.m */; };
+		98E5F21D1E5AED45004C1A91 /* IMRGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E5F21C1E5AED45004C1A91 /* IMRGridLayout.m */; };
+		98E5F2201E5AFB31004C1A91 /* IMRMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E5F21F1E5AFB31004C1A91 /* IMRMovie.m */; };
+		98E5F2281E5B0193004C1A91 /* IMRMovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E5F2261E5B0193004C1A91 /* IMRMovieCollectionViewCell.m */; };
+		98E5F2291E5B0193004C1A91 /* IMRMovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98E5F2271E5B0193004C1A91 /* IMRMovieCollectionViewCell.xib */; };
+		98FF016D1E586B410052744E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FF016C1E586B410052744E /* main.m */; };
+		98FF01701E586B410052744E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FF016F1E586B410052744E /* AppDelegate.m */; };
+		98FF01731E586B410052744E /* IMRMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FF01721E586B410052744E /* IMRMovieViewController.m */; };
+		98FF01761E586B410052744E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FF01741E586B410052744E /* Main.storyboard */; };
+		98FF01781E586B410052744E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FF01771E586B410052744E /* Assets.xcassets */; };
+		98FF017B1E586B410052744E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FF01791E586B410052744E /* LaunchScreen.storyboard */; };
+		98FF01861E586B410052744E /* immmr_ios_recruitingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FF01851E586B410052744E /* immmr_ios_recruitingTests.m */; };
+		AB176CA9EE6C9B4F737691E9 /* Pods_immmr_ios_recruiting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39994C35FC3B7579EBCEF248 /* Pods_immmr_ios_recruiting.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98FF01821E586B410052744E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98FF01601E586B410052744E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98FF01671E586B410052744E;
+			remoteInfo = "immmr-ios-recruiting";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		39994C35FC3B7579EBCEF248 /* Pods_immmr_ios_recruiting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_immmr_ios_recruiting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76E9BF3CC2C01BFECE100E4B /* Pods-immmr-ios-recruitingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-immmr-ios-recruitingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-immmr-ios-recruitingTests/Pods-immmr-ios-recruitingTests.release.xcconfig"; sourceTree = "<group>"; };
+		7E717525C324065DD311D5C2 /* Pods-immmr-ios-recruiting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-immmr-ios-recruiting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-immmr-ios-recruiting/Pods-immmr-ios-recruiting.debug.xcconfig"; sourceTree = "<group>"; };
+		87B5DE983DE5B953799AB589 /* Pods-immmr-ios-recruitingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-immmr-ios-recruitingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-immmr-ios-recruitingTests/Pods-immmr-ios-recruitingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		988D254A1E5B14D3007E7CE8 /* IMRMovieViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRMovieViewModel.h; sourceTree = "<group>"; };
+		988D254B1E5B14D3007E7CE8 /* IMRMovieViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRMovieViewModel.m; sourceTree = "<group>"; };
+		988D254D1E5B1EFD007E7CE8 /* IMRMovieDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRMovieDetailsViewController.h; sourceTree = "<group>"; };
+		988D254E1E5B1EFD007E7CE8 /* IMRMovieDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRMovieDetailsViewController.m; sourceTree = "<group>"; };
+		988D25501E5B20A5007E7CE8 /* IMRTableLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRTableLayout.h; sourceTree = "<group>"; };
+		988D25511E5B20A5007E7CE8 /* IMRTableLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRTableLayout.m; sourceTree = "<group>"; };
+		988D25531E5B25C3007E7CE8 /* IMRMovieDetailsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRMovieDetailsViewModel.h; sourceTree = "<group>"; };
+		988D25541E5B25C3007E7CE8 /* IMRMovieDetailsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRMovieDetailsViewModel.m; sourceTree = "<group>"; };
+		988D25561E5B31E3007E7CE8 /* IMRPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRPerson.h; sourceTree = "<group>"; };
+		988D25571E5B31E3007E7CE8 /* IMRPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRPerson.m; sourceTree = "<group>"; };
+		988D25591E5B3203007E7CE8 /* IMRCast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRCast.h; sourceTree = "<group>"; };
+		988D255A1E5B3203007E7CE8 /* IMRCast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRCast.m; sourceTree = "<group>"; };
+		988D255C1E5B3210007E7CE8 /* IMRCrew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRCrew.h; sourceTree = "<group>"; };
+		988D255D1E5B3210007E7CE8 /* IMRCrew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRCrew.m; sourceTree = "<group>"; };
+		988D255F1E5B3B82007E7CE8 /* IMRBigPosterReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRBigPosterReusableView.h; sourceTree = "<group>"; };
+		988D25601E5B3B82007E7CE8 /* IMRBigPosterReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRBigPosterReusableView.m; sourceTree = "<group>"; };
+		988D25611E5B3B82007E7CE8 /* IMRBigPosterReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMRBigPosterReusableView.xib; sourceTree = "<group>"; };
+		988D25641E5B42BE007E7CE8 /* IMRSectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRSectionReusableView.h; sourceTree = "<group>"; };
+		988D25651E5B42BE007E7CE8 /* IMRSectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRSectionReusableView.m; sourceTree = "<group>"; };
+		988D25661E5B42BE007E7CE8 /* IMRSectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMRSectionReusableView.xib; sourceTree = "<group>"; };
+		988D25691E5B4387007E7CE8 /* IMRPersonCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRPersonCollectionViewCell.h; sourceTree = "<group>"; };
+		988D256A1E5B4387007E7CE8 /* IMRPersonCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRPersonCollectionViewCell.m; sourceTree = "<group>"; };
+		988D256B1E5B4387007E7CE8 /* IMRPersonCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMRPersonCollectionViewCell.xib; sourceTree = "<group>"; };
+		988D256E1E5B45C3007E7CE8 /* IMRPlotCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRPlotCollectionViewCell.h; sourceTree = "<group>"; };
+		988D256F1E5B45C3007E7CE8 /* IMRPlotCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRPlotCollectionViewCell.m; sourceTree = "<group>"; };
+		988D25701E5B45C3007E7CE8 /* IMRPlotCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMRPlotCollectionViewCell.xib; sourceTree = "<group>"; };
+		988D25731E5B51C1007E7CE8 /* UIImage+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extensions.h"; sourceTree = "<group>"; };
+		988D25741E5B51C1007E7CE8 /* UIImage+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extensions.m"; sourceTree = "<group>"; };
+		988D25761E5B52C9007E7CE8 /* NSString+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
+		988D25771E5B52C9007E7CE8 /* NSString+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extensions.m"; sourceTree = "<group>"; };
+		98E5F2181E5AEAEA004C1A91 /* IMRMovieAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRMovieAPIClient.h; sourceTree = "<group>"; };
+		98E5F2191E5AEAEA004C1A91 /* IMRMovieAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRMovieAPIClient.m; sourceTree = "<group>"; };
+		98E5F21B1E5AED45004C1A91 /* IMRGridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRGridLayout.h; sourceTree = "<group>"; };
+		98E5F21C1E5AED45004C1A91 /* IMRGridLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRGridLayout.m; sourceTree = "<group>"; };
+		98E5F21E1E5AFB31004C1A91 /* IMRMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRMovie.h; sourceTree = "<group>"; };
+		98E5F21F1E5AFB31004C1A91 /* IMRMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRMovie.m; sourceTree = "<group>"; };
+		98E5F2251E5B0193004C1A91 /* IMRMovieCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRMovieCollectionViewCell.h; sourceTree = "<group>"; };
+		98E5F2261E5B0193004C1A91 /* IMRMovieCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRMovieCollectionViewCell.m; sourceTree = "<group>"; };
+		98E5F2271E5B0193004C1A91 /* IMRMovieCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMRMovieCollectionViewCell.xib; sourceTree = "<group>"; };
+		98FF01681E586B410052744E /* immmr-ios-recruiting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "immmr-ios-recruiting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98FF016C1E586B410052744E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		98FF016E1E586B410052744E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		98FF016F1E586B410052744E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		98FF01711E586B410052744E /* IMRMovieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMRMovieViewController.h; sourceTree = "<group>"; };
+		98FF01721E586B410052744E /* IMRMovieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMRMovieViewController.m; sourceTree = "<group>"; };
+		98FF01751E586B410052744E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98FF01771E586B410052744E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98FF017A1E586B410052744E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98FF017C1E586B410052744E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98FF01811E586B410052744E /* immmr-ios-recruitingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "immmr-ios-recruitingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98FF01851E586B410052744E /* immmr_ios_recruitingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = immmr_ios_recruitingTests.m; sourceTree = "<group>"; };
+		98FF01871E586B410052744E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A568B66DFDB5A4E6EC195ECD /* Pods-immmr-ios-recruiting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-immmr-ios-recruiting.release.xcconfig"; path = "Pods/Target Support Files/Pods-immmr-ios-recruiting/Pods-immmr-ios-recruiting.release.xcconfig"; sourceTree = "<group>"; };
+		D26EE3EF26A77BB3DF68D55A /* Pods_immmr_ios_recruitingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_immmr_ios_recruitingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98FF01651E586B410052744E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB176CA9EE6C9B4F737691E9 /* Pods_immmr_ios_recruiting.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98FF017E1E586B410052744E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6015EBDE099820FD667C6B82 /* Pods_immmr_ios_recruitingTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4232887DACDC1BFA51C852EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E717525C324065DD311D5C2 /* Pods-immmr-ios-recruiting.debug.xcconfig */,
+				A568B66DFDB5A4E6EC195ECD /* Pods-immmr-ios-recruiting.release.xcconfig */,
+				87B5DE983DE5B953799AB589 /* Pods-immmr-ios-recruitingTests.debug.xcconfig */,
+				76E9BF3CC2C01BFECE100E4B /* Pods-immmr-ios-recruitingTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		98E5F2211E5AFB36004C1A91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				98E5F21E1E5AFB31004C1A91 /* IMRMovie.h */,
+				98E5F21F1E5AFB31004C1A91 /* IMRMovie.m */,
+				988D25561E5B31E3007E7CE8 /* IMRPerson.h */,
+				988D25571E5B31E3007E7CE8 /* IMRPerson.m */,
+				988D25591E5B3203007E7CE8 /* IMRCast.h */,
+				988D255A1E5B3203007E7CE8 /* IMRCast.m */,
+				988D255C1E5B3210007E7CE8 /* IMRCrew.h */,
+				988D255D1E5B3210007E7CE8 /* IMRCrew.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		98E5F2221E5AFB3E004C1A91 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				98FF01711E586B410052744E /* IMRMovieViewController.h */,
+				98FF01721E586B410052744E /* IMRMovieViewController.m */,
+				988D254D1E5B1EFD007E7CE8 /* IMRMovieDetailsViewController.h */,
+				988D254E1E5B1EFD007E7CE8 /* IMRMovieDetailsViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		98E5F2231E5AFB50004C1A91 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				98E5F21B1E5AED45004C1A91 /* IMRGridLayout.h */,
+				98E5F21C1E5AED45004C1A91 /* IMRGridLayout.m */,
+				988D25501E5B20A5007E7CE8 /* IMRTableLayout.h */,
+				988D25511E5B20A5007E7CE8 /* IMRTableLayout.m */,
+				98FF01741E586B410052744E /* Main.storyboard */,
+				98E5F2251E5B0193004C1A91 /* IMRMovieCollectionViewCell.h */,
+				98E5F2261E5B0193004C1A91 /* IMRMovieCollectionViewCell.m */,
+				98E5F2271E5B0193004C1A91 /* IMRMovieCollectionViewCell.xib */,
+				988D255F1E5B3B82007E7CE8 /* IMRBigPosterReusableView.h */,
+				988D25601E5B3B82007E7CE8 /* IMRBigPosterReusableView.m */,
+				988D25611E5B3B82007E7CE8 /* IMRBigPosterReusableView.xib */,
+				988D25641E5B42BE007E7CE8 /* IMRSectionReusableView.h */,
+				988D25651E5B42BE007E7CE8 /* IMRSectionReusableView.m */,
+				988D25661E5B42BE007E7CE8 /* IMRSectionReusableView.xib */,
+				988D25691E5B4387007E7CE8 /* IMRPersonCollectionViewCell.h */,
+				988D256A1E5B4387007E7CE8 /* IMRPersonCollectionViewCell.m */,
+				988D256B1E5B4387007E7CE8 /* IMRPersonCollectionViewCell.xib */,
+				988D256E1E5B45C3007E7CE8 /* IMRPlotCollectionViewCell.h */,
+				988D256F1E5B45C3007E7CE8 /* IMRPlotCollectionViewCell.m */,
+				988D25701E5B45C3007E7CE8 /* IMRPlotCollectionViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		98E5F2241E5AFB59004C1A91 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				98E5F2181E5AEAEA004C1A91 /* IMRMovieAPIClient.h */,
+				98E5F2191E5AEAEA004C1A91 /* IMRMovieAPIClient.m */,
+				988D25731E5B51C1007E7CE8 /* UIImage+Extensions.h */,
+				988D25741E5B51C1007E7CE8 /* UIImage+Extensions.m */,
+				988D25761E5B52C9007E7CE8 /* NSString+Extensions.h */,
+				988D25771E5B52C9007E7CE8 /* NSString+Extensions.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		98E5F22A1E5B0C08004C1A91 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				988D254A1E5B14D3007E7CE8 /* IMRMovieViewModel.h */,
+				988D254B1E5B14D3007E7CE8 /* IMRMovieViewModel.m */,
+				988D25531E5B25C3007E7CE8 /* IMRMovieDetailsViewModel.h */,
+				988D25541E5B25C3007E7CE8 /* IMRMovieDetailsViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		98FF015F1E586B410052744E = {
+			isa = PBXGroup;
+			children = (
+				98FF016A1E586B410052744E /* immmr-ios-recruiting */,
+				98FF01841E586B410052744E /* immmr-ios-recruitingTests */,
+				98FF01691E586B410052744E /* Products */,
+				4232887DACDC1BFA51C852EF /* Pods */,
+				E47C6F10D647F307EC723CF4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		98FF01691E586B410052744E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98FF01681E586B410052744E /* immmr-ios-recruiting.app */,
+				98FF01811E586B410052744E /* immmr-ios-recruitingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98FF016A1E586B410052744E /* immmr-ios-recruiting */ = {
+			isa = PBXGroup;
+			children = (
+				98E5F2221E5AFB3E004C1A91 /* Controller */,
+				98E5F2211E5AFB36004C1A91 /* Model */,
+				98E5F2241E5AFB59004C1A91 /* Utils */,
+				98E5F2231E5AFB50004C1A91 /* View */,
+				98E5F22A1E5B0C08004C1A91 /* ViewModel */,
+				98FF016E1E586B410052744E /* AppDelegate.h */,
+				98FF016F1E586B410052744E /* AppDelegate.m */,
+				98FF01771E586B410052744E /* Assets.xcassets */,
+				98FF01791E586B410052744E /* LaunchScreen.storyboard */,
+				98FF017C1E586B410052744E /* Info.plist */,
+				98FF016B1E586B410052744E /* Supporting Files */,
+			);
+			path = "immmr-ios-recruiting";
+			sourceTree = "<group>";
+		};
+		98FF016B1E586B410052744E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				98FF016C1E586B410052744E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		98FF01841E586B410052744E /* immmr-ios-recruitingTests */ = {
+			isa = PBXGroup;
+			children = (
+				98FF01851E586B410052744E /* immmr_ios_recruitingTests.m */,
+				98FF01871E586B410052744E /* Info.plist */,
+			);
+			path = "immmr-ios-recruitingTests";
+			sourceTree = "<group>";
+		};
+		E47C6F10D647F307EC723CF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39994C35FC3B7579EBCEF248 /* Pods_immmr_ios_recruiting.framework */,
+				D26EE3EF26A77BB3DF68D55A /* Pods_immmr_ios_recruitingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98FF01671E586B410052744E /* immmr-ios-recruiting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98FF018A1E586B410052744E /* Build configuration list for PBXNativeTarget "immmr-ios-recruiting" */;
+			buildPhases = (
+				5EF57D3A7CDCC7CFC077AFEF /* [CP] Check Pods Manifest.lock */,
+				98FF01641E586B410052744E /* Sources */,
+				98FF01651E586B410052744E /* Frameworks */,
+				98FF01661E586B410052744E /* Resources */,
+				F34A90EBD3DC5E0B25877D1C /* [CP] Embed Pods Frameworks */,
+				475C7F752DC32825EF1AC483 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "immmr-ios-recruiting";
+			productName = "immmr-ios-recruiting";
+			productReference = 98FF01681E586B410052744E /* immmr-ios-recruiting.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98FF01801E586B410052744E /* immmr-ios-recruitingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98FF018D1E586B410052744E /* Build configuration list for PBXNativeTarget "immmr-ios-recruitingTests" */;
+			buildPhases = (
+				D23BC9EE23C529EB8184A89F /* [CP] Check Pods Manifest.lock */,
+				98FF017D1E586B410052744E /* Sources */,
+				98FF017E1E586B410052744E /* Frameworks */,
+				98FF017F1E586B410052744E /* Resources */,
+				84498A3F25C72F603FD94E49 /* [CP] Embed Pods Frameworks */,
+				4C9CD42C26F26E22C261B004 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98FF01831E586B410052744E /* PBXTargetDependency */,
+			);
+			name = "immmr-ios-recruitingTests";
+			productName = "immmr-ios-recruitingTests";
+			productReference = 98FF01811E586B410052744E /* immmr-ios-recruitingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98FF01601E586B410052744E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IMR;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Immmr GmbH";
+				TargetAttributes = {
+					98FF01671E586B410052744E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					98FF01801E586B410052744E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 98FF01671E586B410052744E;
+					};
+				};
+			};
+			buildConfigurationList = 98FF01631E586B410052744E /* Build configuration list for PBXProject "immmr-ios-recruiting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98FF015F1E586B410052744E;
+			productRefGroup = 98FF01691E586B410052744E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98FF01671E586B410052744E /* immmr-ios-recruiting */,
+				98FF01801E586B410052744E /* immmr-ios-recruitingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98FF01661E586B410052744E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				988D25681E5B42BE007E7CE8 /* IMRSectionReusableView.xib in Resources */,
+				988D256D1E5B4387007E7CE8 /* IMRPersonCollectionViewCell.xib in Resources */,
+				98FF017B1E586B410052744E /* LaunchScreen.storyboard in Resources */,
+				98FF01781E586B410052744E /* Assets.xcassets in Resources */,
+				988D25721E5B45C3007E7CE8 /* IMRPlotCollectionViewCell.xib in Resources */,
+				98E5F2291E5B0193004C1A91 /* IMRMovieCollectionViewCell.xib in Resources */,
+				988D25631E5B3B82007E7CE8 /* IMRBigPosterReusableView.xib in Resources */,
+				98FF01761E586B410052744E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98FF017F1E586B410052744E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		475C7F752DC32825EF1AC483 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-immmr-ios-recruiting/Pods-immmr-ios-recruiting-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C9CD42C26F26E22C261B004 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-immmr-ios-recruitingTests/Pods-immmr-ios-recruitingTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EF57D3A7CDCC7CFC077AFEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		84498A3F25C72F603FD94E49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-immmr-ios-recruitingTests/Pods-immmr-ios-recruitingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D23BC9EE23C529EB8184A89F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F34A90EBD3DC5E0B25877D1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-immmr-ios-recruiting/Pods-immmr-ios-recruiting-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98FF01641E586B410052744E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				988D254F1E5B1EFD007E7CE8 /* IMRMovieDetailsViewController.m in Sources */,
+				988D255E1E5B3210007E7CE8 /* IMRCrew.m in Sources */,
+				988D25621E5B3B82007E7CE8 /* IMRBigPosterReusableView.m in Sources */,
+				98FF01731E586B410052744E /* IMRMovieViewController.m in Sources */,
+				988D25711E5B45C3007E7CE8 /* IMRPlotCollectionViewCell.m in Sources */,
+				98E5F2281E5B0193004C1A91 /* IMRMovieCollectionViewCell.m in Sources */,
+				988D25521E5B20A5007E7CE8 /* IMRTableLayout.m in Sources */,
+				988D254C1E5B14D3007E7CE8 /* IMRMovieViewModel.m in Sources */,
+				988D25581E5B31E3007E7CE8 /* IMRPerson.m in Sources */,
+				98E5F2201E5AFB31004C1A91 /* IMRMovie.m in Sources */,
+				98FF01701E586B410052744E /* AppDelegate.m in Sources */,
+				98FF016D1E586B410052744E /* main.m in Sources */,
+				988D255B1E5B3203007E7CE8 /* IMRCast.m in Sources */,
+				988D25551E5B25C3007E7CE8 /* IMRMovieDetailsViewModel.m in Sources */,
+				988D25751E5B51C1007E7CE8 /* UIImage+Extensions.m in Sources */,
+				988D25781E5B52C9007E7CE8 /* NSString+Extensions.m in Sources */,
+				98E5F21D1E5AED45004C1A91 /* IMRGridLayout.m in Sources */,
+				988D256C1E5B4387007E7CE8 /* IMRPersonCollectionViewCell.m in Sources */,
+				988D25671E5B42BE007E7CE8 /* IMRSectionReusableView.m in Sources */,
+				98E5F21A1E5AEAEA004C1A91 /* IMRMovieAPIClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98FF017D1E586B410052744E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98FF01861E586B410052744E /* immmr_ios_recruitingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98FF01831E586B410052744E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98FF01671E586B410052744E /* immmr-ios-recruiting */;
+			targetProxy = 98FF01821E586B410052744E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		98FF01741E586B410052744E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98FF01751E586B410052744E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		98FF01791E586B410052744E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98FF017A1E586B410052744E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98FF01881E586B410052744E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		98FF01891E586B410052744E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98FF018B1E586B410052744E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E717525C324065DD311D5C2 /* Pods-immmr-ios-recruiting.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "immmr-ios-recruiting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.immmr.immmr-ios-recruiting";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		98FF018C1E586B410052744E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A568B66DFDB5A4E6EC195ECD /* Pods-immmr-ios-recruiting.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "immmr-ios-recruiting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.immmr.immmr-ios-recruiting";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		98FF018E1E586B410052744E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87B5DE983DE5B953799AB589 /* Pods-immmr-ios-recruitingTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "immmr-ios-recruitingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.immmr.immmr-ios-recruitingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/immmr-ios-recruiting.app/immmr-ios-recruiting";
+			};
+			name = Debug;
+		};
+		98FF018F1E586B410052744E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76E9BF3CC2C01BFECE100E4B /* Pods-immmr-ios-recruitingTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "immmr-ios-recruitingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.immmr.immmr-ios-recruitingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/immmr-ios-recruiting.app/immmr-ios-recruiting";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98FF01631E586B410052744E /* Build configuration list for PBXProject "immmr-ios-recruiting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98FF01881E586B410052744E /* Debug */,
+				98FF01891E586B410052744E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98FF018A1E586B410052744E /* Build configuration list for PBXNativeTarget "immmr-ios-recruiting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98FF018B1E586B410052744E /* Debug */,
+				98FF018C1E586B410052744E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98FF018D1E586B410052744E /* Build configuration list for PBXNativeTarget "immmr-ios-recruitingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98FF018E1E586B410052744E /* Debug */,
+				98FF018F1E586B410052744E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98FF01601E586B410052744E /* Project object */;
+}

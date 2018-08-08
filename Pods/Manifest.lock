@@ -1,0 +1,55 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - MACollectionUtilities (0.0.1)
+  - OCMock (3.4)
+  - ReactiveCocoa (5.0.0-alpha.1):
+    - ReactiveSwift (~> 1.0.0-alpha.1)
+  - ReactiveObjC (1.0.0-alpha.1)
+  - ReactiveObjCBridge (1.0.0-alpha.1):
+    - ReactiveObjC (~> 1.0.0-alpha.1)
+    - ReactiveSwift (~> 1.0.0-alpha.1)
+  - ReactiveSwift (1.0.0-alpha.1):
+    - Result (~> 3.0)
+  - Result (3.1.0)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - MACollectionUtilities
+  - OCMock
+  - ReactiveCocoa (= 5.0.0-alpha.1)
+  - ReactiveObjC (= 1.0.0-alpha.1)
+  - ReactiveObjCBridge (= 1.0.0-alpha.1)
+  - ReactiveSwift (= 1.0.0-alpha.1)
+  - SDWebImage
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  MACollectionUtilities: 94f09e37805122681ab3ab780d8c7cb025ca16eb
+  OCMock: 35ae71d6a8fcc1b59434d561d1520b9dd4f15765
+  ReactiveCocoa: 4a75c9aff393466c095cecc40c5146f9cfd692e4
+  ReactiveObjC: 49106cde79e3272530f0a0120315821b4a82aaa0
+  ReactiveObjCBridge: 5436b1c0a764fb209c53e02f6645fdc6a5c0660f
+  ReactiveSwift: 5b0a950caa3644402be6dea0620bd6dd785668b9
+  Result: 4e3ed5995ed94d0cd6a09be9a431fce3f3624bbf
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+
+PODFILE CHECKSUM: 37ad2eff3b4ae16b39b98d5f37904260b92e59e2
+
+COCOAPODS: 1.1.1

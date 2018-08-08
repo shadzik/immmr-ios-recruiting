@@ -1,0 +1,6 @@
+framework module MACollectionUtilities {
+  umbrella header "MACollectionUtilities-umbrella.h"
+
+  export *
+  module * { export * }
+}

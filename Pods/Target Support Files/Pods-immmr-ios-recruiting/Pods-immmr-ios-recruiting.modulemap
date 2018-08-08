@@ -1,0 +1,6 @@
+framework module Pods_immmr_ios_recruiting {
+  umbrella header "Pods-immmr-ios-recruiting-umbrella.h"
+
+  export *
+  module * { export * }
+}
