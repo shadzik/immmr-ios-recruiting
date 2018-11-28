@@ -19,7 +19,6 @@
 
 - (NSInteger)numberOfSections;
 - (NSInteger)numberOfItemsInSection:(NSInteger)section;
-- (void)getNowPlayingMovies;
 
 @property (nonatomic, strong) RACSubject *reloadDataSignal;
 @property (readonly) NSArray *nowPlayingMovies;

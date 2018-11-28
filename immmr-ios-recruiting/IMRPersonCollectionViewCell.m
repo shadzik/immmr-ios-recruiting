@@ -27,8 +27,10 @@
 -  (void)awakeFromNib
 {
     [super awakeFromNib];
-
-    // Do we need this? Maybe we do (Hint: Exercise 4)
+    
+    self.posterImageView.layer.cornerRadius = self.posterImageView.frame.size.width/2;
+    self.posterImageView.clipsToBounds = YES;
+    self.posterImageView.hidden = NO;
 }
 
 - (void)setPerson:(IMRPerson *)person
@@ -43,7 +45,10 @@
         }
     }
     
-    UIImage *placeholderImage;
+    UIImage *placeholderImage = [UIImage drawCircleWithSize:self.posterImageView.frame.size
+                                                      color:[UIColor darkGrayColor]
+                                                       text:[self.name.text getInitials]
+                                                   fontSize:self.name.font.pointSize];
     
     NSURL *url = [NSURL URLWithString:person.profile_path];
     
@@ -60,7 +65,7 @@
                                            self.posterImageView.image = placeholderImage;
                                        } else {
                                            self.posterImageView.alpha = 0;
-                                           self.posterImageView.image = image;
+                                           self.posterImageView.image = [image squareImageWithSize:self.posterImageView.frame.size];
                                            
                                            [UIView transitionWithView:self.posterImageView
                                                              duration:0.5f
@@ -72,5 +77,18 @@
                                        }
                                    }];
 }
+
+// we could remove this code to provoke a bug
+// in which the UIImageView gets hidden for the "Show more" cell
+// and then gets reused
+- (void)prepareForReuse
+{
+    [super prepareForReuse];
+    
+    self.posterImageView.image = nil;
+    self.posterImageView.hidden = NO;
+    self.posterImageView.alpha = 1.0;
+}
+
 
 @end

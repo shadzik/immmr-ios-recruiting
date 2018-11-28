@@ -54,18 +54,24 @@ static NSString * const sectionReuseIdentifier = @"kSectionView";
     [self.collectionView registerNib:sectionNib
           forSupplementaryViewOfKind:UICollectionElementKindSectionHeader
                  withReuseIdentifier:sectionReuseIdentifier];
+    
+    @weakify(self)
+    [self.viewModel.reloadDataSignal subscribeNext:^(id  _Nullable x) {
+        @strongify(self)
+        [self.collectionView reloadData];
+    }];
 }
 
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 0;
+    return self.viewModel.numberOfSections;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 0;
+    return [self.viewModel numberOfItemsInSection:section];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -74,10 +80,30 @@ static NSString * const sectionReuseIdentifier = @"kSectionView";
     IMRPersonCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:castIdentifier forIndexPath:indexPath];
 
     if (section == IMRMovieDetailsSection_director) {
+        IMRCrew *director = self.viewModel.directors[indexPath.row];
+        cell.person = director;
         return cell;
     } else if (section == IMRMovieDetailsSection_cast) {
+        
+        if (!self.viewModel.shouldShowFullCast && indexPath.row == shortCastNumber)
+        {
+            IMRCast *fakeCast = [[IMRCast alloc] initWithDictionary:@{
+                                                                      @"name" : NSLocalizedString(@"Show more...", @"show more"),
+                                                                      @"character" : @""
+                                                                      }];
+            cell.person = fakeCast;
+            cell.posterImageView.hidden = YES;
+            return cell;
+        }
+        
+        IMRCast *cast = self.viewModel.cast[indexPath.row];
+        cell.person = cast;
         return cell;
     } else if (section == IMRMovieDetailsSection_overview) {
+        IMRPlotCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:plotIdentifier forIndexPath:indexPath];
+        
+        cell.plot.text = self.movie.overview;
+        
         return cell;
     }
         
@@ -86,11 +112,11 @@ static NSString * const sectionReuseIdentifier = @"kSectionView";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-//    if (!self.viewModel.shouldShowFullCast && indexPath.row == shortCastNumber)
-//    {
-//        self.viewModel.shouldShowFullCast = !self.viewModel.shouldShowFullCast;
-//        [self.collectionView reloadSections:[NSIndexSet indexSetWithIndex:IMRMovieDetailsSection_cast]];
-//    }
+    if (!self.viewModel.shouldShowFullCast && indexPath.row == shortCastNumber)
+    {
+        self.viewModel.shouldShowFullCast = !self.viewModel.shouldShowFullCast;
+        [self.collectionView reloadSections:[NSIndexSet indexSetWithIndex:IMRMovieDetailsSection_cast]];
+    }
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
@@ -147,10 +173,16 @@ static NSString * const sectionReuseIdentifier = @"kSectionView";
 
 #pragma mark - FlowLayout Delegate
 
-//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-//{
-// Exercise 5
-//}
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGSize size = [((IMRTableLayout*)collectionViewLayout) itemSizeForScreenWidth:self.collectionView.bounds.size.width];
+    
+    if (indexPath.section == IMRMovieDetailsSection_overview) {
+        size.height = [self heightForString:self.movie.overview font:[UIFont systemFontOfSize:17]];
+    }
+    
+    return size;
+}
 
 - (CGFloat)heightForString:(NSString*)inString font:(UIFont*)inFont
 {

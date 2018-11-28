@@ -9,6 +9,17 @@
 #import "IMRPerson.h"
 
 @interface IMRCast : IMRPerson
+/*
+ {
+ "cast_id": 29,
+ "character": "Terri Perri",
+ "credit_id": "52fe422ac3a36847f8009057",
+ "id": 3021,
+ "name": "Terri Perri",
+ "order": 18,
+ "profile_path": null
+ }
+ */
 
 @property (readonly) NSString *castid;
 @property (readonly) NSString *character;

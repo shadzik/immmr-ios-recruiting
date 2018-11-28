@@ -26,10 +26,7 @@
     _movie = movie;
     
     NSURL *url = [NSURL URLWithString:movie.poster_path];
-    
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    [request addValue:@"image/*" forHTTPHeaderField:@"Accept"];
-    
+        
     @weakify(self)
     [self.coverImageView sd_setImageWithURL:url
                            placeholderImage:[UIImage imageNamed:@"movie-placeholder"]

@@ -10,6 +10,17 @@
 
 @interface IMRCrew : IMRPerson
 
+/*
+{
+    "credit_id": "52fe422ac3a36847f8008fd5",
+    "department": "Directing",
+    "id": 648,
+    "job": "Director",
+    "name": "Philip Kaufman",
+    "profile_path": "/5hmDqd4AoGgDnAb18L6JcjtqlmK.jpg"
+},
+*/
+
 @property (readonly) NSString *job;
 @property (readonly) NSString *department;
 @property (readonly) NSString *creditid;

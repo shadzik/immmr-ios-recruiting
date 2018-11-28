@@ -42,21 +42,50 @@ NSInteger const shortCastNumber = 4;
 
 - (void)getCast
 {
+    @weakify(self)
+    [self.apiClient getCastForMovie:self.movie.movieid successBlock:^(NSDictionary *result) {
+        @strongify(self)
+        NSArray *castArray = result[@"cast"];
+        NSArray *crewArray = result[@"crew"];
+        
+        self.cast = [castArray ma_map:^id(id obj) {
+            IMRCast *cast = [[IMRCast alloc] initWithDictionary:obj];
+            return cast;
+        }];
+        
+        self.crew = [crewArray ma_map:^id(id obj) {
+            IMRCrew *crew = [[IMRCrew alloc] initWithDictionary:obj];
+            return crew;
+        }];
+        
+        NSPredicate *directorPredicate = [NSPredicate predicateWithBlock:^BOOL(IMRCrew *crewMember, NSDictionary<NSString *,id> * _Nullable bindings) {
+            return [[crewMember.job lowercaseString] isEqualToString:@"director"] ? YES : NO;
+        }];
+        self.directors = [self.crew filteredArrayUsingPredicate:directorPredicate];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [(RACSubject *)self.reloadDataSignal sendNext:nil];
+        });
+    }];
 }
 
 - (NSInteger)numberOfSections
 {
-    return 0;
+    return IMRMovieDetailsSections_count;
 }
 
 - (NSInteger)numberOfItemsInSection:(NSInteger)section
 {
     if (section == IMRMovieDetailsSection_director) {
-        return 0;
+        return self.directors.count;
     } else if (section == IMRMovieDetailsSection_cast) {
-        return 0;
+        if (self.cast.count > shortCastNumber+1) {
+            // + 1 for "show more" cell
+            return self.shouldShowFullCast ? self.cast.count : shortCastNumber+1;
+        }
+        return self.cast.count;
     } else if (section == IMRMovieDetailsSection_overview) {
-        return 0;
+        return 1;
     }
     
     return 0;
